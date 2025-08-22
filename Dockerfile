@@ -15,7 +15,7 @@ RUN mkdir -p /tmp/nginx/logs /tmp/nginx/client-body /tmp/nginx/proxy \
 RUN chown -R 1000:1000 /tmp/nginx/
 
 # Copy website
-COPY app/app
+COPY app /app
 
 # Konfigurasi nginx
 RUN echo " \
