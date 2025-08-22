@@ -14,6 +14,7 @@ RUN mkdir -p /tmp/nginx/logs /tmp/nginx/client-body /tmp/nginx/proxy \
 # Berikan kepemilikan direktori kepada user 1000
 RUN chown -R 1000:1000 /tmp/nginx/
 
+
 # Copy website
 COPY app /app
 
